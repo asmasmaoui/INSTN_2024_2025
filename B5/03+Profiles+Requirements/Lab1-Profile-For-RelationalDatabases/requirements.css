@@ -1,0 +1,8 @@
+Class[appliedStereotypes~="Requirement"] {
+	fillColor : yellow;
+}
+
+Class[appliedStereotypes~="Requirement"] > Compartment[kind="operations"],
+Class[appliedStereotypes~="Requirement"] > Compartment[kind="nestedclassifiers"] {
+	visible: false;
+} 
