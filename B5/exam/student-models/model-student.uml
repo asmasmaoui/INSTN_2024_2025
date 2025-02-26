@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_hHW0sG2nEeSJwJ5b2EI49w" name="rover">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="Imported_From_SysML_14_Of__hHW0sG2nEeSJwJ5b2EI49w" source="Imported_From_SysML_1.4">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="Papyrus_Source_Model_Name_Of__hHW0sG2nEeSJwJ5b2EI49w" key="Papyrus_Source_Model_Name" value="model"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="Papyrus_SysML_Migration_Date_Of__hHW0sG2nEeSJwJ5b2EI49w" key="Papyrus_SysML_Migration_Date" value="20210222182726"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="Papyrus_SysML_Migration_Bundle_Version_Of__hHW0sG2nEeSJwJ5b2EI49w" key="Papyrus_SysML_Migration_Bundle_Version" value="0.7.0.qualifier"/>
+    </eAnnotations>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="packageImport_Of__0">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="packageImport_Of_SysML.package_packagedElement_Libraries">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_rQSXEG2oEeS0zON3R0Eyzg" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_OtfkoG2rEeS0zON3R0Eyzg" name="RoverSpecification">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_py2BUG2rEeS0zON3R0Eyzg" name="Steering"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_wBkNYG2rEeS0zON3R0Eyzg" name="Motion">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_GQZNwG2xEeS0zON3R0Eyzg" name="TractiveMotion"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_js4g8G2xEeS0zON3R0Eyzg" name="SafeMotion"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_4HuhQHQDEeSYXaEK-nTzMg" name="OperationFeedback"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_d-dK8HQGEeSYXaEK-nTzMg" name="Logging"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GZ_9EG2uEeS0zON3R0Eyzg" name="SteeringAngle"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rs09kG2yEeS0zON3R0Eyzg" name="ObstacleDetection"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_09_m8G2yEeS0zON3R0Eyzg" name="DeriveReqt2" client="_rQSXEG2oEeS0zON3R0Eyzg" supplier="_js4g8G2xEeS0zON3R0Eyzg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Q1cIoIBvEeSwOd74FZV_QQ" name="EnergyDissipation"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_RPQKwJzrEeWn6oj_67_KHg" name="DeriveReqt3" client="_GZ_9EG2uEeS0zON3R0Eyzg" supplier="_py2BUG2rEeS0zON3R0Eyzg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JZsIsG2rEeS0zON3R0Eyzg" name="RemoteControl"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bAuhwG20EeS0zON3R0Eyzg" name="Architecture">
+      <packagedElement xmi:type="uml:Package" xmi:id="_plzToG9HEeSTI4SOImNJbg" name="Interfaces">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z2e5QG9HEeSTI4SOImNJbg" name="IRemoteControl">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_3Tt1IG9HEeSTI4SOImNJbg" name="turnLeft">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ucN_UHrUEeSyfI3lcWCipA" name="angle">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_-GkpAG9HEeSTI4SOImNJbg" name="turnRight">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_5KPBMHrUEeSyfI3lcWCipA" name="angle">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_5Rko8G9HEeSTI4SOImNJbg" name="goForward">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_zmg58HrUEeSyfI3lcWCipA" name="speed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_78XbQG9HEeSTI4SOImNJbg" name="goBackward">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2ctD8HrUEeSyfI3lcWCipA" name="speed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_neZ-gIXeEeSSq5Dt-5gwuQ" name="stop"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zHK-EPOAEe-RhPbESyUZDA" name="IRPM">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3dhTQPOAEe-RhPbESyUZDA" name="rpm" visibility="public" type="_VDc_AG9JEeSTI4SOImNJbg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_86KiIPOAEe-RhPbESyUZDA" name="IAngle">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RLiJkPOBEe-RhPbESyUZDA" name="angle" visibility="public" type="_DZD5gG9MEeSTI4SOImNJbg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7MitQPOBEe-RhPbESyUZDA" name="IFrequency">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9WMhYPOBEe-RhPbESyUZDA" name="IDist" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_OrL5cPOREe-RhPbESyUZDA" name="IHeating">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_q4hR4POREe-RhPbESyUZDA" name="startHeating"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_srUsQPOREe-RhPbESyUZDA" name="stopHeating"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Ru13sPOREe-RhPbESyUZDA" name="ITemperature">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bTSpcPOREe-RhPbESyUZDA" name="temp" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YpF64G9HEeSTI4SOImNJbg" name="Datatypes">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_VDc_AG9JEeSTI4SOImNJbg" name="RPM">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_n-6jcG9JEeSTI4SOImNJbg" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_L7qUEG9JEeSTI4SOImNJbg" name="RotationFrequence">
+          <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_IJ55sG9JEeSTI4SOImNJbg" name="RotationPerMinute">
+          <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_DZD5gG9MEeSTI4SOImNJbg" name="StAngle">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_N4nooG9MEeSTI4SOImNJbg" name="SteeringAngleConstraint" constrainedElement="_DZD5gG9MEeSTI4SOImNJbg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_jRo0oG9MEeSTI4SOImNJbg">
+              <language>OCL</language>
+              <body>self.value&lt;=3.14/3 and self.value >=-3.14/3&#xD;
+</body>
+            </specification>
+          </ownedRule>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_I4wcYG9MEeSTI4SOImNJbg" name="value" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Ej1_sG9OEeSTI4SOImNJbg" name="SteeringAngle">
+          <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_I7rioG9OEeSTI4SOImNJbg" name="Radian">
+          <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mB7t4JWfEeSgSsgocNzpmg" name="Hz"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_j-rcsJWfEeSgSsgocNzpmg" name="Frequence">
+          <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_olpAwJWfEeSgSsgocNzpmg" name="Hertz">
+          <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ylG8wHrTEeSyfI3lcWCipA" name="Events">
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_DsHhAHrUEeSyfI3lcWCipA" name="ObstacleDetectedCalled"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_QzMsAHrUEeSyfI3lcWCipA" name="DriftDetectedCalled"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_jMMckHrUEeSyfI3lcWCipA" name="TurnLeftCalled" operation="_3Tt1IG9HEeSTI4SOImNJbg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_A_9AQHrVEeSyfI3lcWCipA" name="TurnRightCalled" operation="_-GkpAG9HEeSTI4SOImNJbg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_Gr7roHrVEeSyfI3lcWCipA" name="ForwardCalled" operation="_5Rko8G9HEeSTI4SOImNJbg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_K4krMHrVEeSyfI3lcWCipA" name="BackwardCalled" operation="_78XbQG9HEeSTI4SOImNJbg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_O8feYG21EeS0zON3R0Eyzg" name="Rover" isActive="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zOssM221EeS0zON3R0Eyzg" name="leftmotionwheel" type="_VxckAG21EeS0zON3R0Eyzg" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xfa4ENGdEeaO9Zjq4jAP0Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xfkCANGdEeaO9Zjq4jAP0Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_V_es8m9KEeSTI4SOImNJbg" name="steeringSystem" type="_PsnAsG9KEeSTI4SOImNJbg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bgtEY29LEeSTI4SOImNJbg" name="rightMotionwheel" type="_VxckAG21EeS0zON3R0Eyzg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_c9OMIJWfEeSgSsgocNzpmg" name="sonar" visibility="public" type="_7MitQPOBEe-RhPbESyUZDA" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_3VxNMJWfEeSgSsgocNzpmg" name="control" visibility="public" type="_z2e5QG9HEeSTI4SOImNJbg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_IYbh8POREe-RhPbESyUZDA" name="tempSensor" visibility="public" type="_Ru13sPOREe-RhPbESyUZDA" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PsnAsG9KEeSTI4SOImNJbg" name="SteeringSystem" isActive="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yVt1w221EeS0zON3R0Eyzg" name="leftsteeringweel" type="_SpfUkG21EeS0zON3R0Eyzg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_FISGUG9KEeSTI4SOImNJbg" name="steeringAngle" type="_86KiIPOAEe-RhPbESyUZDA" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_F0DKs29LEeSTI4SOImNJbg" name="rightSteeringweel" type="_SpfUkG21EeS0zON3R0Eyzg" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SpfUkG21EeS0zON3R0Eyzg" name="SteeringWheel" isActive="true">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_j9rx8PIiEeeF6celEwbkYg">
+          <body>It might have been better to specify U = R x I and then P = U x I. This would have highlighted the reuse of the first equation.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OvVWUIXWEeSSq5Dt-5gwuQ" name="ohm" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_PUtUQIXWEeSSq5Dt-5gwuQ" name="joule" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_m8RbcIXWEeSSq5Dt-5gwuQ" name="resitance" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wcje4IXWEeSSq5Dt-5gwuQ" name="voltage" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_B75qoIXXEeSSq5Dt-5gwuQ" name="energy" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdPaEPIhEeeF6celEwbkYg" name="intensity"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VxckAG21EeS0zON3R0Eyzg" name="MotionWheel" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_7sEDgG9JEeSTI4SOImNJbg" name="rotationSpeed" type="_zHK-EPOAEe-RhPbESyUZDA" aggregation="composite"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_223cAN8qEeeiXs_xHg3iVA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_223cAd8qEeeiXs_xHg3iVA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_Activities">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_Activities" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_Allocations">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_Allocations" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_Blocks">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_Blocks" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_ConstraintBlocks">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_ConstraintBlocks" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_DeprecatedElements">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_DeprecatedElements" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_ModelElements">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_ModelElements" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_Ports_u0026Flows">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_Ports_u0026Flows" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileApplication_Of_SysML.package_packagedElement_Requirements">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="eAnnotation_Of_profileApplication_Of_SysML.package_packagedElement_Requirements" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dtn8sPN3Ee-RhPbESyUZDA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dtojwPN3Ee-RhPbESyUZDA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_JalgkG2rEeS0zON3R0Eyzg" id="1" text="The rover is not independent. Its operation is commanded by a remote. " base_Class="_JZsIsG2rEeS0zON3R0Eyzg"/>
+  <Requirements:Requirement xmi:id="_OtyflW2rEeS0zON3R0Eyzg" id="0" text="The system is a four wheels rover." base_Class="_OtfkoG2rEeS0zON3R0Eyzg"/>
+  <Requirements:Requirement xmi:id="_pzceQG2rEeS0zON3R0Eyzg" id="2" text="The rover must be able to steer left and right. " base_Class="_py2BUG2rEeS0zON3R0Eyzg"/>
+  <Requirements:Requirement xmi:id="_wCASQG2rEeS0zON3R0Eyzg" id="3" text="The rover must be able to go forward and backward" base_Class="_wBkNYG2rEeS0zON3R0Eyzg"/>
+  <Requirements:Requirement xmi:id="_GacpAG2uEeS0zON3R0Eyzg" id="2.1" text="The steering angle of the left and right wheel must be between -1/3pi and 1/3pi" base_Class="_GZ_9EG2uEeS0zON3R0Eyzg"/>
+  <Requirements:Requirement xmi:id="_GQsvzm2xEeS0zON3R0Eyzg" id="3.1" text="The rover must maintain tractive contact with the ground" base_Class="_GQZNwG2xEeS0zON3R0Eyzg"/>
+  <Requirements:Requirement xmi:id="_jteW0G2xEeS0zON3R0Eyzg" id="3.2" text="The system must avoid collision during motion" base_Class="_js4g8G2xEeS0zON3R0Eyzg"/>
+  <Requirements:Requirement xmi:id="_rtRpgG2yEeS0zON3R0Eyzg" id="3.2.2" text="The rover must be able to detect obstacles" base_Class="_rs09kG2yEeS0zON3R0Eyzg"/>
+  <Requirements:DeriveReqt xmi:id="_0-Sh4W2yEeS0zON3R0Eyzg" base_Abstraction="_09_m8G2yEeS0zON3R0Eyzg"/>
+  <Blocks:Block xmi:id="_O8pPYG21EeS0zON3R0Eyzg" base_Class="_O8feYG21EeS0zON3R0Eyzg"/>
+  <Blocks:Block xmi:id="_SpfUkW21EeS0zON3R0Eyzg" base_Class="_SpfUkG21EeS0zON3R0Eyzg"/>
+  <Blocks:Block xmi:id="_VxckAW21EeS0zON3R0Eyzg" base_Class="_VxckAG21EeS0zON3R0Eyzg"/>
+  <Blocks:ValueType xmi:id="_VDc_AW9JEeSTI4SOImNJbg" base_DataType="_VDc_AG9JEeSTI4SOImNJbg" quantityKind="_L7qUEG9JEeSTI4SOImNJbg" unit="_IJ55sG9JEeSTI4SOImNJbg"/>
+  <DeprecatedElements:FlowPort xmi:id="_7sEDgW9JEeSTI4SOImNJbg" base_Port="_7sEDgG9JEeSTI4SOImNJbg" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_FISGUW9KEeSTI4SOImNJbg" base_Port="_FISGUG9KEeSTI4SOImNJbg" direction="in"/>
+  <Blocks:Block xmi:id="_PswKoG9KEeSTI4SOImNJbg" base_Class="_PsnAsG9KEeSTI4SOImNJbg"/>
+  <Blocks:ValueType xmi:id="_DZNqgG9MEeSTI4SOImNJbg" base_DataType="_DZD5gG9MEeSTI4SOImNJbg" quantityKind="_Ej1_sG9OEeSTI4SOImNJbg" unit="_I7rioG9OEeSTI4SOImNJbg"/>
+  <Requirements:Requirement xmi:id="_4In5IHQDEeSYXaEK-nTzMg" id="4" text="The rover sends errors of operations to the remote base" base_Class="_4HuhQHQDEeSYXaEK-nTzMg"/>
+  <Requirements:Requirement xmi:id="_d_Mx0HQGEeSYXaEK-nTzMg" id="5" text="The rover logs operations and errors" base_Class="_d-dK8HQGEeSYXaEK-nTzMg"/>
+  <Requirements:Requirement xmi:id="_Q9xlQIBvEeSwOd74FZV_QQ" id="6" text="Energy dissipation for the steering must not exceed 60W/h." base_Class="_Q1cIoIBvEeSwOd74FZV_QQ"/>
+  <DeprecatedElements:FlowPort xmi:id="_c9TrsJWfEeSgSsgocNzpmg" base_Port="_c9OMIJWfEeSgSsgocNzpmg"/>
+  <Blocks:ValueType xmi:id="_mB9jEJWfEeSgSsgocNzpmg" base_DataType="_mB7t4JWfEeSgSsgocNzpmg" quantityKind="_j-rcsJWfEeSgSsgocNzpmg" unit="_olpAwJWfEeSgSsgocNzpmg"/>
+  <Requirements:DeriveReqt xmi:id="_RPjswJzrEeWn6oj_67_KHg" base_Abstraction="_RPQKwJzrEeWn6oj_67_KHg"/>
+  <ModelElements:Problem xmi:id="_j950YPIiEeeF6celEwbkYg" base_Comment="_j9rx8PIiEeeF6celEwbkYg"/>
+  <PortsAndFlows:ProxyPort xmi:id="_tkjU8PN-Ee-RhPbESyUZDA" base_Port="_7sEDgG9JEeSTI4SOImNJbg"/>
+  <PortsAndFlows:ProxyPort xmi:id="_zpJUoPN-Ee-RhPbESyUZDA" base_Port="_FISGUG9KEeSTI4SOImNJbg"/>
+  <PortsAndFlows:ProxyPort xmi:id="_aKBZcPN_Ee-RhPbESyUZDA" base_Port="_c9OMIJWfEeSgSsgocNzpmg"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_zHOocPOAEe-RhPbESyUZDA" base_Class="_zHK-EPOAEe-RhPbESyUZDA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_3dk9oPOAEe-RhPbESyUZDA" base_Property="_3dhTQPOAEe-RhPbESyUZDA" direction="in"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_86PaoPOAEe-RhPbESyUZDA" base_Class="_86KiIPOAEe-RhPbESyUZDA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_RLnCEPOBEe-RhPbESyUZDA" base_Property="_RLiJkPOBEe-RhPbESyUZDA" direction="in"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_7Mpa8POBEe-RhPbESyUZDA" base_Class="_7MitQPOBEe-RhPbESyUZDA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_9WQy0POBEe-RhPbESyUZDA" base_Property="_9WMhYPOBEe-RhPbESyUZDA"/>
+  <DeprecatedElements:FlowPort xmi:id="_UzQuIPOVEe-RhPbESyUZDA" base_Port="_IYbh8POREe-RhPbESyUZDA" direction="in"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_Ru6JIPOREe-RhPbESyUZDA" base_Class="_Ru13sPOREe-RhPbESyUZDA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_bTbMUPOREe-RhPbESyUZDA" base_Property="_bTSpcPOREe-RhPbESyUZDA" direction="in"/>
+  <PortsAndFlows:ProxyPort xmi:id="_IYhBgPOREe-RhPbESyUZDA" base_Port="_IYbh8POREe-RhPbESyUZDA"/>
+</xmi:XMI>

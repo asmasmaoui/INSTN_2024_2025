@@ -41,7 +41,7 @@ package 'Analysis Case Definition Example' {
 			}
 			
 			require constraint {
-				fuelEconomyResult > 30 [mi / gal]
+				fuelEconomyResult > 50 [mi / gal]
 			}
 		}
 	    
