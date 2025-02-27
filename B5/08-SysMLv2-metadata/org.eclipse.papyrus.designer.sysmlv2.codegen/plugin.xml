@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension
+			point="org.eclipse.papyrus.designer.languages.common.extensionpoints.languageCodegen">
+		<generator
+			id="Simple SysML"
+			class="org.eclipse.papyrus.designer.sysmlv2.codegen.SimpleSysMLLangCodegen"
+			language="SysMLv2">
+		</generator>
+	</extension>
+</plugin>
