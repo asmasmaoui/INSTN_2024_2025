@@ -20,9 +20,8 @@ import org.eclipse.papyrus.designer.languages.common.base.HierarchyLocationStrat
 import org.eclipse.papyrus.designer.languages.common.base.ModelElementsCreator;
 import org.eclipse.papyrus.designer.languages.common.base.file.FileSystemAccessFactory;
 import org.eclipse.papyrus.designer.sysmlv2.codegen.GenSysML;
-import org.eclipse.uml2.uml.Class;
-import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.Element;
+import org.eclipse.uml2.uml.Package;
 import org.eclipse.uml2.uml.PackageableElement;
 
 public class SysMLModelElementsCreator extends ModelElementsCreator {
@@ -55,28 +54,15 @@ public class SysMLModelElementsCreator extends ModelElementsCreator {
 		if (done) {
 			return;
 		}
-		if (resultBuffer == null) {
-			resultBuffer = new StringBuffer();
-			super.createPackageableElement(element, monitor, recursive);
-			final String fileName = locStrategy.getFileName(element) + "." + sysmlExt; //$NON-NLS-1$
-			fileSystemAccess.generateFile(fileName, resultBuffer.toString());
-			resultBuffer = null;
-			done = true;
-		}
-		else {
-			super.createPackageableElement(element, monitor, recursive);			
-		}
+		// super.createPackageableElement(element, monitor, recursive);
+		CharSequence result = GenSysML.createPackage((Package) element, true);
+
+		final String fileName = locStrategy.getFileName(element) + "." + sysmlExt; //$NON-NLS-1$
+		fileSystemAccess.generateFile(fileName, result.toString());
+		done = true;
 	}
 
 	@Override
 	protected void createPackageableElementFile(PackageableElement pe, IProgressMonitor monitor) {
-		if (pe instanceof Classifier) {
-			Classifier classifier = (Classifier) pe;
-			if (classifier instanceof Class) {
-				// please note that SysMLv1 requirements are also based on classes
-				String result = GenSysML.genElement((Class) classifier).toString();
-				resultBuffer.append(result);
-			}
-		}
 	}
 }

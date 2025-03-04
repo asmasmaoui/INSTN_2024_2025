@@ -14,29 +14,49 @@
 
 package org.eclipse.papyrus.designer.sysmlv2.codegen;
 
-import org.eclipse.uml2.uml.Class
 import org.eclipse.papyrus.sysml16.blocks.Block
 import static extension org.eclipse.uml2.uml.util.UMLUtil.getStereotypeApplication
 import org.eclipse.papyrus.sysml16.requirements.Requirement
+import org.eclipse.uml2.uml.Classifier
+import org.eclipse.uml2.uml.Package
 
 class GenSysML {
 	/**
 	 * Simple SysMLv2 code generator
 	 */
-	static def genElement(Class clazz) {
-		val block = clazz.getStereotypeApplication(Block)
+	static def CharSequence createPackage(Package pkg, boolean isTopLevel) '''
+		package «pkg.name» {
+			«IF isTopLevel»
+				import ...
+			«ENDIF»
+			«FOR pe : pkg.packagedElements»
+				«IF pe instanceof Classifier»
+					«pe.genElement»
+				«ELSEIF pe instanceof Package»
+					«pe.createPackage(false)»
+				«ENDIF»
+			«ENDFOR»
+		}
+	'''
+	
+	static def CharSequence genElement(Classifier classifier) {
+		val block = classifier.getStereotypeApplication(Block)
 		if (block !== null) {
 			return genBlock(block)
 		}
-		val req = clazz.getStereotypeApplication(Requirement)
+		val req = classifier.getStereotypeApplication(Requirement)
 		if (req !== null) {
 			return genReq(req)
 		}
+		return ""
 	}
 
 	static def genBlock(Block block) '''
 		part def «block.base_Class.name» {
 			...
+			«FOR connector : block.base_Class.ownedConnectors»
+				«connector.ends.get(0).role.name»
+			«ENDFOR»
 		}
 	'''
 	
