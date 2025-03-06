@@ -28,8 +28,6 @@ public class SysMLModelElementsCreator extends ModelElementsCreator {
 
 	private static final String SYSML_LANG = "SysML"; //$NON-NLS-1$
 
-	StringBuffer resultBuffer = null;
-	
 	boolean done = false;
 
 	public SysMLModelElementsCreator(IProject project) {
